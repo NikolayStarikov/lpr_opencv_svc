@@ -2,6 +2,7 @@
 FROM ubuntu:16.04
 #RUN apt-get update -y && 
 #    apt-get install -y --no-install-recommends git ca-certificates
+RUN pip install virtualenv virtualenvwrapper
 RUN /bin/bash -c "source /usr/local/bin/virtualenvwrapper.sh"
 
 RUN pip install git+ssh://git@github.com/NikolayStarikov/lpr_opencv_svc.git
